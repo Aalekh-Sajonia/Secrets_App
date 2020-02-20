@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron centered">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">Secrets</h1>
+    <p>Don't keep your secrets, share them anonymously!</p>
+  </div>
+  <form action="/submit" method="POST" onsubmit="return validateData()">
+    <div class="form-group">
+      <div>
+        <input type="text" id="secret" maxlength="140" onkeyup="count_down(this);" name="secret" placeholder="What's your secret?">
+      </div>
+      <div>
+        <span>Characters remaining: </span>
+        <span class="text-muted pull-right" id="count1">140</span>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="button-class">
+        <button type="submit" class="btn btn-outline-secondary btn-lg btn-block" role="button">Submit</button>
+      </div>
+    </div>
+  </form>
+
+
+</div>
+<script src="validateConfess.js"></script>
+<%- include('partials/footer') %>

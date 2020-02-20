@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+<div class="container mt-5">
+
+    <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+      </div>
+      <h1 class="fadeIn second pad-ele">Register</h1>
+      <!-- Login Form -->
+      <form action="/register" method="POST" onsubmit="return validateData()">
+        <input type="text" id="login" class="fadeIn second" name="username" placeholder="Email">
+        <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
+        <input type="submit" class="m-2 btn btn-outline-secondary fadeIn third" fadeIn fourth" value="Register">
+      </form>
+
+      <!-- Remind Passowrd -->
+      <div class="px-5 py-2 fadeIn fourth">
+        <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+          <i class="fab fa-google justify-content-center"></i>
+          Sign Up
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="validation.js" charset="utf-8"></script>
+<%- include('partials/header') %>
