@@ -1,1 +1,1 @@
-This is a Secrets app.
+This is a Secret Confession web app.
